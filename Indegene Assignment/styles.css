@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: calc(0.7rem + 0.5vw);
+
+    font-family: Arial, sans-serif;
+
+}
+h1 {
+    font-size: calc(1rem + 1vw);
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        font-size: calc(1rem + 0.3vw);
+    }
+
+    h1 {
+        font-size: calc(1.5rem + 0.5vw);
+    }
+
+   
+}
+
+
+.parentContainer {
+    padding: 0 2rem 0 2rem;
+
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo>img {
+        width: 30%;
+    }
+
+    .wrapper {
+        width: 30%;
+    }
+
+    .links {
+        width: 100%;
+        list-style: none;
+        font-weight: 600;
+    }
+}
+
+.bannerImg>img {
+    width: 100%;
+}
+
+.secondSection {
+    padding: 2rem;
+
+}
+
+.wrapper {
+    display: flex;
+
+    &>h1 {
+        margin-left: 1rem;
+    }
+}
+
+.descriptionText {
+    margin-top: 1.5rem;
+}
+
+.cardwrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    /* width: 300px; */
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: red;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Third section css */
+.thirdSection {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.headerTitle {
+    color: red;
+}
+
+.descriptionparaText {
+    margin: 1.5rem 0;
+}
+
+.bulletPoints {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    &>div>ul {
+        text-align: justify;
+
+        &>li {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.divider {
+    border: 1px solid red;
+    margin: 2rem 0;
+}
+
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+
+    &>div>ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+}
+
+.bulletPointsWrapper {
+    width: 75%;
+}
+.footerLinks{
+    width: 30%;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+/* media query responsive css */
+@media only screen and (max-width: 1100px) {
+    .bulletPointsWrapper {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .bulletPoints {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+    }
+
+    .bulletPointsWrapper {
+        width: 100%;
+
+    }
+
+    .card {
+        padding: 10px 0;
+    }
+
+    .cardwrapper {
+        flex-wrap: wrap;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .parentContainer .thirdSection {
+        padding: 0 1rem 0 1rem;
+    }
+    .footerSection{
+        padding: 0 1rem;
+    }
+    .footerLinks{
+        width: 80%;
+    }
+}
